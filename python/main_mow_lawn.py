@@ -3,7 +3,7 @@ from multiprocessing.pool import ThreadPool
 
 from mow_lawn_funcs import init_matrix_lawn, init_mowers, move_mower
 
-with open("./data/input/example.txt", "r") as f:
+with open("../data/input/example.txt", "r") as f:
     file_content = [c.split(" ") for c in f.read().splitlines()]
 
     lawn_size = [int(v) + 1 for v in file_content[0]]
